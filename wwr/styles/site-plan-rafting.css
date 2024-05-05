@@ -9,8 +9,8 @@ body {
 :root {
     --primary-color:  #05668D;
     --secondary-color:  #00A896;
-    --accent-color-1: #02C39A;
-    --accent-color-2: #F0F3BD;
+    --accent1-color: #02C39A;
+    --accent2-color: #F0F3BD;
 
     --heading-font: 'Reddit Sans', serif;
     --paragraph-font: 'Reddit Sans', serif;
