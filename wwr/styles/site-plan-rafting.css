@@ -1,1 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color:  #05668D;
+    --secondary-color:  #00A896;
+    --accent-color-1: #02C39A;
+    --accent-color-2: #F0F3BD;
+
+    --heading-font: 'Reddit Sans', serif;
+    --paragraph-font: 'Reddit Sans', serif;
+    
+    --nav-background-color: #00A896;
+    --nav-link-color: #F0F3BD;
+    --nav-hover-link-color: #05668D;
+    --nav-hover-background-color: #02C39A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+
+p {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+  
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
