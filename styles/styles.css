@@ -1,71 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary-color:  #05668D;
+    --secondary-color:  #00A896;
+    --accent1-color: #02C39A;
+    --accent2-color: #F0F3BD;
+
+    --heading-font: 'Reddit Sans', serif;
+    --paragraph-font: 'Reddit Sans', serif;
+    
+    --nav-background-color: #00A896;
+    --nav-link-color: #F0F3BD;
+    --nav-hover-link-color: #05668D;
+    --nav-hover-background-color: #02C39A;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Reddit Sans', sans-serif;
 }
 
 nav {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--primary-color);
+    padding: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+main {
+    grid-column: 2/3;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 2px;
-    margin-left: 20px;
+    margin: 20px;
     box-shadow: 0 0 30px gray;
     float: right;
 }
 
 p {
-    padding: 0;
-}
-
-main {
-    max-width: 500px;
+    padding: 1rem 0;
 }
 
 aside {
     width: 240px;
-    /* text-align: center; */
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 
 aside h2 {
     position: absolute;
     top: 1rem;
-    left: 2rem;
+    left: 2.8rem;
 }
 
-footer {
-    margin-top: 30px;
-    border-top: 2px solid #05668dab;
-    text-align: center;
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+ul a {
+    color: var(--nav-link-color);
 }
 
 /* Class Selectors */
 
 .box {
+    clear: both;
     margin: 1rem;
     border: 1px solid darkblue;
-    padding: 1rem;
-    background-color: #05668D;
-    color: #F0F3BD;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+.grid {
+    display: grid;
 }
