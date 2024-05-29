@@ -20,62 +20,71 @@
             </nav>
         </header>
         <main>
-            <section>
-                <h2>Contact Us!</h4>
+            <section class="contact">
+                <h2>Contact Us!</h2>
                 <ul>
                     <li><b>Address:</b> 133 Rocky Hill Rd, Madison Heights, VA 24572, EUA</li>
                     <li><b>Phone number:</b> 434-522-2362</li>
                     <li><b>Email:</b> contact@whitewatter.com</li>
                 </ul>
                 <aside>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.8057086217837!2d-79.13983052345574!3d37.41806697207748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d91415a94bd7%3A0x433f6a95d02908d1!2s133%20Rocky%20Hill%20Rd%2C%20Madison%20Heights%2C%20VA%2024572%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1716949127419!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.8057086217837!2d-79.13983052345574!3d37.41806697207748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b2d91415a94bd7%3A0x433f6a95d02908d1!2s133%20Rocky%20Hill%20Rd%2C%20Madison%20Heights%2C%20VA%2024572%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1716949127419!5m2!1spt-BR!2sbr" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </aside>
             </section>
-            <section>
+            <section class="team">
                 <h2>Meet the Team</h2>
                 <figure>
                     <img src="images/person1.jpg" alt="Portrait of Steven Morales smiling">
-                    <caption>Steven Morales<br>Operations Manager</caption>
+                    <figcaption>Steven Morales<br>Operations Manager</figcaption>
                 </figure>
                 <figure>
                     <img src="images/person2.jpg" alt="Portrait of John Ginyard smiling">
-                    <caption>John Ginyard<br>Rafting Guide</caption>
+                    <figcaption>John Ginyard<br>Rafting Guide</figcaption>
                 </figure>
                 <figure>
                     <img src="images/person3.jpg" alt="Portrait of Mary Simmons smiling">
-                    <caption>Mary Simmons<br>Customer Service Representative</caption>
+                    <figcaption>Mary Simmons<br>Customer Service Representative</figcaption>
                 </figure>
             </section>
-            <section>
+            <form>
                 <h2>Send a message...</h2>
-                <form>
+                <div>
                     <label for="name">Name:</label>
                     <input type="text" name="name" id="name" placeholder="First and last name">
-
+                </div>
+                <div>
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="username@domain.com">
-
+                </div>
+                <div class="purpose">
                     <label>Purpose:</label>
-                    <input type="radio" name="purpose" id="general-inquiry" value="general-inquiry">
-                    <label for="general-inquiry">General Inquiry</label>
-
-                    <input type="radio" name="purpose" id="reservation-question" value="reservation-question">
-                    <label for="reservation-question">Reservation Question</label>
-
-                    <input type="radio" name="purpose" id="website-suggestion" value="website-suggestion">
-                    <label for="website-suggestion">Website Suggestion</label>
-
+                    <div>
+                        <input type="radio" name="purpose" id="general-inquiry" value="general-inquiry">
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="purpose" id="reservation-question" value="reservation-question">
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="purpose" id="website-suggestion" value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>                    
+                </div>
+                <div>
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" placeholder="Type here..."></textarea>
-
+                </div>
+                <div class="subscribe">
                     <input type="checkbox" name="subscribe-newsletter" id="subscribe-newsletter">
                     <label for="subscribe-newsletter">Please, subscribe me to the monthly newsletter.</label>
-
-                    <button type="submit">Send Message!</button>
-                </form>
-            </section>
+                </div>
+                <button type="submit">Send Message!</button>
+            </form>
         </main>
         <footer>
+            <a href="https://app.moqups.com/Oxg8xxG121ehkCQ3ACYVcJ3DPxy4vJMP/edit/page/ad64222d5">Moqups Wireframe</a>
             <p>&copy; 2024 | White Watter Rafting | Wesley Raymundo</p>
             <a href="https://instagram.com"><img src="images/icon-instagram.webp" alt="Instagram icon"></a>
             <a href="https://youtube.com"><img src="images/icon-youtube.webp" alt="Youtube icon"></a>
