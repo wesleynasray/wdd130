@@ -262,3 +262,70 @@ form button {
     display: flex;
     justify-content: center;
 }
+
+/* TRIPS PAGE SELECTORS */
+
+.trips {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.trips-description {
+    grid-column: 1/3;
+    display: grid;
+}
+
+.trips-description figure {
+    margin: .2rem;
+}
+
+.trips-description h1 {
+    grid-column: 1/4;
+}
+
+.trips-description p {
+    padding: 0 1rem;
+}
+
+.trips-description .name {
+    font-weight: bolder;
+}
+
+
+.trips-description img {
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.trips-table table {
+    background-color: var(--primary-color);
+    color: white;
+    border: .2rem solid black;
+    border-radius: .5rem;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.trips-table th, td {
+    padding: .75rem;
+}
+
+.trips-action a {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.trips-action a:hover {
+    background-color: var(--accent2-color);
+    color: black;
+}
