@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
-    --primary-color:  #05668D;
+    --primary-color:  #020025b3;
     --secondary-color:  #00A896;
     --accent1-color: #02C39A;
     --accent2-color: #F0F3BD;
@@ -10,8 +10,8 @@
     --paragraph-font: 'Reddit Sans', serif;
     
     --nav-background-color: #00A896;
-    --nav-link-color: #F0F3BD;
-    --nav-hover-link-color: #05668D;
+    --nav-link-color: #020025b3;
+    --nav-hover-link-color: #F0F3BD;
     --nav-hover-background-color: #02C39A;
 }
 
@@ -75,12 +75,15 @@ header a:hover {
 
 .hero h1 {
     position: absolute;
-    width: 90%;
-    padding: .5em;
+    background-color: var(--accent2-color);
+    width: 80%;
+    padding: 1rem;
+    font-size: 2rem;
     text-align: center;
-    background-color: var(--secondary-color);
     opacity: .9;
-    top: 10%;
+    top: 3rem;
+    border-radius: 0 1rem 1rem 0;
+    color: var(--primary-color);
 }
 
 .hero article {
@@ -258,6 +261,11 @@ form button {
     margin: auto;
 }
 
+form button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
 .subscribe {
     display: flex;
     justify-content: center;
@@ -316,16 +324,56 @@ form button {
     padding: .75rem;
 }
 
-.trips-action a {
+.button-link {
     font-size: 1.5rem;
-    color: white;
+    color: var(--primary-color);
     padding: 1rem;
     background-color: var(--accent1-color);
     text-decoration: none;
     border-radius: 1rem;
 }
 
-.trips-action a:hover {
+.button-link:hover {
     background-color: var(--accent2-color);
-    color: black;
+    color: var(--primary-color);
+}
+
+/* HOME PAGE SELECTORS */
+
+.home {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.home .hero {
+    grid-column: 1/3;
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+    margin: .25rem 0;
+}
+
+.home form {
+    width: 100%;
+}
+
+.home label {
+    text-align: right;
+}
+
+.home input {
+    margin-left: 1rem;
+}
+
+.home .action {
+    text-align: center;
+}
+
+.home .action h2 {
+    width: 75%;
+    margin: 4rem auto;
 }
