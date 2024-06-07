@@ -191,20 +191,15 @@ section.contact {
     align-items: center;
 }
 
-section.contact h2 {
+section.contact h1 {
     grid-column: 1/3;
     text-align: center;
 }
 
-.contact aside {
-    border: .3rem solid var(--primary-color);
-    border-radius: .5rem;
-    margin: 0 1rem;
-}
-
 section.contact iframe {
-    border: 0;
-    width: 100%;
+    border: .2rem solid var(--primary-color);
+    border-radius: 1rem;
+    width: 90%;
 }
 
 section.team {
