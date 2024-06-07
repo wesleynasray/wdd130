@@ -230,7 +230,7 @@ form h2 {
     text-align: center;
 }
 
-form div {
+form div, fieldset {
     display: grid;
     gap: .5rem 1rem;
     grid-template-columns: 1fr 5fr;
@@ -238,17 +238,19 @@ form div {
     text-align: right;
 }
 
-.purpose > label {
-    grid-row: 1/4;
-    align-self: start;
+fieldset {
+    position: relative;
 }
 
-.purpose div {
+legend {
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+fieldset div {
     display: flex;
-}
-
-.purpose div label {
-    text-align: start;
+    grid-column: 2/3;
 }
 
 form textarea {

@@ -57,23 +57,21 @@
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="username@domain.com">
                 </div>
-                <div class="purpose">
-                    <label for="purpose">Purpose:</label>
-                    <fieldset id="purpose">
-                        <div>
-                            <input type="radio" name="purpose" id="general-inquiry" value="general-inquiry">
-                            <label for="general-inquiry">General Inquiry</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="purpose" id="reservation-question" value="reservation-question">
-                            <label for="reservation-question">Reservation Question</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="purpose" id="website-suggestion" value="website-suggestion">
-                            <label for="website-suggestion">Website Suggestion</label>
-                        </div>                    
-                    </fieldset>
-                </div>
+                <fieldset>
+                    <legend>Purpose:</legend>
+                    <div>
+                        <input type="radio" name="purpose" id="general-inquiry" value="general-inquiry">
+                        <label for="general-inquiry">General Inquiry</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="purpose" id="reservation-question" value="reservation-question">
+                        <label for="reservation-question">Reservation Question</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="purpose" id="website-suggestion" value="website-suggestion">
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </div>                    
+                </fieldset>
                 <div>
                     <label for="message">Message:</label>
                     <textarea name="message" id="message" placeholder="Type here..."></textarea>
