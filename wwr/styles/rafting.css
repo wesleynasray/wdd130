@@ -270,7 +270,12 @@ form textarea {
 
 form input[type="radio"] {
     width: 1rem;
-    margin: 0;
+    margin: .5rem 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
 }
 
 form input[type="checkbox"] {
